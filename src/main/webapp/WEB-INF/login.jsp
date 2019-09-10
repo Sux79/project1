@@ -11,6 +11,19 @@
     <title>登录页面</title>
 </head>
 <body >
-
+<table>
+    <tr>
+        <td>账号：</td>
+        <td><input type="text"></td>
+    </tr>
+    <tr>
+        <td>密码：</td>
+        <td><input type="text"></td>
+    </tr>
+    <tr>
+        <td><input type="text" placeholder="请输入验证码"></td>
+        <td><div></div></td>
+    </tr>
+</table>
 </body>
 </html>
