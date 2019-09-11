@@ -16,4 +16,10 @@ public class index {
     public String indexLogin() {
         return "login";
     }
+
+
+    @RequestMapping(value = "register")
+    public  String register() {
+        return "register";
+    }
 }

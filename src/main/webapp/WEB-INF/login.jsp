@@ -9,6 +9,10 @@
 <html>
 <head>
     <title>登录页面</title>
+
+
+
+    <script type="text/javascript" src="<%=request.getContextPath()%>../js/login.js"></script>
 </head>
 <body >
 <table>
@@ -23,6 +27,19 @@
     <tr>
         <td><input type="text" placeholder="请输入验证码"></td>
         <td><div></div></td>
+    </tr>
+    <tr>
+    <ul>
+        <li>
+            账号：<input type="text">
+        </li>
+        <li>
+            密码：<input type="text">
+        </li>
+        <li>
+            <button>登录</button>
+        </li>
+    </ul>
     </tr>
 </table>
 </body>
