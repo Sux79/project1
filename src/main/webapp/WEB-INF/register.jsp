@@ -17,7 +17,7 @@
             <li>邮箱验证码：<input type="text"  maxlength="6"></li>
             <li>用户名：<input type="text"></li>
             <li>密码：<input type="password" MAXLENGTH="12"></li>
-            <li>验证码：<img src="/VerificationCode" alt="点击刷新验证码" id="safecode"></li>
+            <li>验证码：<img src="/VerificationCode" alt="点击刷新验证码" id="safecode" onclick=""></li>
             <li><button id="">登录</button></li>
         </ul>
     </table>

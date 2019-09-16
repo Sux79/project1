@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import javax.websocket.Session;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.util.stream.Stream;
@@ -35,7 +36,9 @@ public class VerificationCode extends HttpServlet {
         }
         // 存入会话session
         HttpSession session = req.getSession(true);
-//        session.removeAttribute();
-        System.out.println(captcha.getCode());
+        session.removeAttribute("VerificationCode");
+        session.setAttribute("VerificationCode",captcha.getCode());
+//        String code = (String) req.getSession().getAttribute("VerificationCode");
+//        System.out.println(code);
     }
 }
