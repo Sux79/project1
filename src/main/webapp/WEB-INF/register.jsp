@@ -9,6 +9,9 @@
 <html>
 <head>
     <title>注册页面</title>
+    <link rel="stylesheet" href="../layui/css/layui.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
 </head>
 <body>
     <table>
@@ -18,7 +21,7 @@
             <li>用户名：<input type="text"></li>
             <li>密码：<input type="password" MAXLENGTH="12"></li>
             <li>验证码：<img src="/VerificationCode" alt="点击刷新验证码" id="safecode" onclick=""></li>
-            <li><button id="">登录</button></li>
+            <li><button type="button" id="register" class="layui-btn layui-btn-normal">注册</button></li>
         </ul>
     </table>
 </body>
