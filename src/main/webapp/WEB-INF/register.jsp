@@ -20,9 +20,14 @@
             <li>邮箱验证码：<input type="text"  maxlength="6"></li>
             <li>用户名：<input type="text"></li>
             <li>密码：<input type="password" MAXLENGTH="12"></li>
-            <li>验证码：<img src="/VerificationCode" alt="点击刷新验证码" id="safecode" onclick=""></li>
+            <li>验证码：<img src="/VerificationCode" alt="点击刷新验证码" id="safecode" onclick="reloadVerificationCode()"></li>
             <li><button type="button" id="register" class="layui-btn layui-btn-normal">注册</button></li>
         </ul>
     </table>
 </body>
+<script type="text/javascript" src="<%=request.getContextPath()%>/jq/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="<%=request.getContextPath()%>/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="<%=request.getContextPath()%>/layui/layui.js"></script>
+<script type="text/javascript" src="<%=request.getContextPath()%>/js/ajax-public.js"></script>
+<script type="text/javascript" src="<%=request.getContextPath()%>/js/register.js"></script>
 </html>
