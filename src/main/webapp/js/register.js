@@ -1,5 +1,5 @@
 (function () {
-    register.init()
+    // register.init()
 }(window));
 
 var register={
@@ -7,3 +7,8 @@ var register={
 
     }
 };
+
+function reloadVerificationCode() {
+    var d = Math.random() * (9999 - 1000) + 1000;
+    document.getElementById("safecode").src = "/VerificationCode?verifyCorrectCode=" + d;
+}

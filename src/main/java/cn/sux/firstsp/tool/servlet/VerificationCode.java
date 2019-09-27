@@ -38,7 +38,7 @@ public class VerificationCode extends HttpServlet {
         HttpSession session = req.getSession(true);
         session.removeAttribute("VerificationCode");
         session.setAttribute("VerificationCode",captcha.getCode());
-//        String code = (String) req.getSession().getAttribute("VerificationCode");
-//        System.out.println(code);
+        String code = (String) req.getSession().getAttribute("VerificationCode");
+        System.out.println(code);
     }
 }
