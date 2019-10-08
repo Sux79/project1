@@ -49,8 +49,7 @@
                         <img src="/VerificationCode" alt="点击刷新验证码" id="safecode" onclick="reloadVerificationCode()">
                     </div>
                     <div id="register">
-                        <button type="button"  class="layui-btn layui-btn-normal">登录
-                        </button>
+                        <button type="button"  class="layui-btn layui-btn-normal">登录</button>
                     </div>
                 </form>
             </div>

@@ -17,8 +17,7 @@ public class index {
         return "login";
     }
 
-
-    @RequestMapping(value = "register")
+    @RequestMapping(value = "/register")
     public  String register() {
         return "register";
     }

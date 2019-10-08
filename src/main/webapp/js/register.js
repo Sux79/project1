@@ -4,7 +4,9 @@
 
 var register={
     init:function () {
+        aj.async("/login/login",parms,function (reply) {
 
+        })
     }
 };
 
