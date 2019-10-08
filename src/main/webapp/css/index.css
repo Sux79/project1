@@ -26,9 +26,21 @@ html,body{
 }
 #loginFrom{
     background-color: white;
-    width: 90%;
-    height: 80%;
+    width: 70%;
+    height: auto;
+
 }
 .space{
-    padding-left: 2%;
+    padding-left: 3%;
+}
+
+#register{
+    padding-bottom: 3%;
+    text-align: center;
+}
+.footer{
+    text-align: center;
+}
+#safecode{
+    border: 1px solid #87d5e6;
 }

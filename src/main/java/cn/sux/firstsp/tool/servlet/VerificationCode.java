@@ -28,7 +28,7 @@ public class VerificationCode extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        ICaptcha captcha = CaptchaUtil.createLineCaptcha(102,40,4,18);
+        ICaptcha captcha = CaptchaUtil.createLineCaptcha(100,35,4,58);
         try {
             captcha.write(resp.getOutputStream());
         }catch (Exception e){
@@ -38,7 +38,7 @@ public class VerificationCode extends HttpServlet {
         HttpSession session = req.getSession(true);
         session.removeAttribute("VerificationCode");
         session.setAttribute("VerificationCode",captcha.getCode());
-        String code = (String) req.getSession().getAttribute("VerificationCode");
-        System.out.println(code);
+//        String code = (String) req.getSession().getAttribute("VerificationCode");
+//        System.out.println(code);
     }
 }
