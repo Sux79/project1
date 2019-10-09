@@ -28,14 +28,16 @@ html,body{
     background-color: white;
     width: 70%;
     height: auto;
-
+    border-radius: 8px;
+    box-shadow:8px 8px 18px #000;
 }
 .space{
     padding-left: 3%;
 }
 
-#register{
-    padding-bottom: 3%;
+#login #register{
+    padding-bottom: 8%;
+    margin-bottom: 8%;
     text-align: center;
 }
 .footer{

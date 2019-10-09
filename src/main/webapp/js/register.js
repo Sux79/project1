@@ -1,14 +1,17 @@
-(function () {
-    // register.init()
-}(window));
-
-var register={
-    init:function () {
-        aj.async("/login/login",parms,function (reply) {
-
-        })
+var register ={
+    in:function () {
+        init();
     }
 };
+$(function () {
+    register.in();
+});
+function init(){
+    var parm = {"id":'1',"sex":'nan'};
+        aj.async("/loginAndRegister/login",parm,function (reply) {
+        alert(reply)
+    })
+}
 
 function reloadVerificationCode() {
     var d = Math.random() * (9999 - 1000) + 1000;

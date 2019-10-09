@@ -48,9 +48,10 @@
                         </div>
                         <img src="/VerificationCode" alt="点击刷新验证码" id="safecode" onclick="reloadVerificationCode()">
                     </div>
-                    <div id="register">
-                        <button type="button"  class="layui-btn layui-btn-normal">登录</button>
+                    <div id="login">
+                        <button type="button"  class="layui-btn layui-btn-fluid layui-btn-normal layui-btn-radius">登录</button>
                     </div>
+                    <label class="control-label" >没有账号请<a href="http://wpa.qq.com/msgrd?v=3&uin=1021773496&Site=&menu=yes" style="color: #0000FF">联系管理员</a></label>
                 </form>
             </div>
         </div>

@@ -57,8 +57,7 @@
                     <img src="/VerificationCode" alt="点击刷新验证码" id="safecode" onclick="reloadVerificationCode()">
                 </div>
                 <div id="register">
-                <button type="button"  class="layui-btn layui-btn-normal">注册
-                </button>
+                <button type="button"  class="layui-btn layui-btn-fluid layui-btn-normal layui-btn-radius">注册</button>
                 </div>
                 <%--<ul style="list-style-type:none">--%>
                     <%--<li>邮箱：<input type="email"></li>--%>
@@ -81,6 +80,7 @@
 <script type="text/javascript" src="<%=request.getContextPath()%>/jq/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="<%=request.getContextPath()%>/bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="<%=request.getContextPath()%>/layui/layui.js"></script>
+<script src="<%=request.getContextPath()%>/layui/layui.all.js"></script>
 <script type="text/javascript" src="<%=request.getContextPath()%>/js/ajax-public.js"></script>
 <script type="text/javascript" src="<%=request.getContextPath()%>/js/register.js"></script>
 </html>
