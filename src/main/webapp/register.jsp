@@ -10,9 +10,9 @@
 <head>
     <title>注册页面</title>
     <meta name="viewport"  content="width=device-width,minimum-scale=1.0, maximum-scale=2.0; charset=UTF-8">
-    <link rel="stylesheet" href="../layui/css/layui.css">
-    <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="layui/css/layui.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
 </head>
 <%--<script>--%>
     <%--var   a=screen.availWidth;--%>
@@ -76,11 +76,11 @@
     </div>
 </div>
 </body>
-<script type="text/javascript" src="<%=request.getContextPath()%>/jq/jquery.min.js"></script>
-<script type="text/javascript" src="<%=request.getContextPath()%>/jq/jquery-3.1.1.min.js"></script>
-<script type="text/javascript" src="<%=request.getContextPath()%>/bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="<%=request.getContextPath()%>/layui/layui.js"></script>
-<script src="<%=request.getContextPath()%>/layui/layui.all.js"></script>
-<script type="text/javascript" src="<%=request.getContextPath()%>/js/ajax-public.js"></script>
-<script type="text/javascript" src="<%=request.getContextPath()%>/js/register.js"></script>
+<script type="text/javascript" src="<%=request.getContextPath()%>jq/jquery.min.js"></script>
+<script type="text/javascript" src="<%=request.getContextPath()%>jq/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="<%=request.getContextPath()%>bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="<%=request.getContextPath()%>layui/layui.js"></script>
+<script src="<%=request.getContextPath()%>layui/layui.all.js"></script>
+<script type="text/javascript" src="<%=request.getContextPath()%>js/ajax-public.js"></script>
+<script type="text/javascript" src="<%=request.getContextPath()%>js/register.js"></script>
 </html>

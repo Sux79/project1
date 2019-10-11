@@ -2,10 +2,12 @@ package cn.sux.firstsp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 //@Controller
 @SpringBootApplication
-public class FirstspApplication {
+public class FirstspApplication extends SpringBootServletInitializer {
 
     public static void main(String[] args) {
         SpringApplication.run(FirstspApplication.class, args);
@@ -15,4 +17,8 @@ public class FirstspApplication {
 //    public String indexLogin() {
 //        return "login";
 //    }
+        @Override
+        protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+            return application.sources(FirstspApplication.class);
+        }
 }
