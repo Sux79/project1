@@ -61,10 +61,11 @@
     </div>
 </div>
 </body>
-<script type="text/javascript" src="<%=request.getContextPath()%>jq/jquery.min.js"></script>
-<script type="text/javascript" src="<%=request.getContextPath()%>jq/jquery-3.1.1.min.js"></script>
-<script type="text/javascript" src="<%=request.getContextPath()%>bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="<%=request.getContextPath()%>layui/layui.js"></script>
-<script type="text/javascript" src="<%=request.getContextPath()%>js/ajax-public.js"></script>
-<script type="text/javascript" src="<%=request.getContextPath()%>js/login.js"></script>
+<script type="text/javascript" src="<%=request.getContextPath()%>/jq/jquery.min.js"></script>
+<script type="text/javascript" src="<%=request.getContextPath()%>/jq/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="<%=request.getContextPath()%>/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="<%=request.getContextPath()%>/layui/layui.js"></script>
+<script src="<%=request.getContextPath()%>/layui/layui.all.js"></script>
+<script type="text/javascript" src="<%=request.getContextPath()%>/js/ajax-public.js"></script>
+<script type="text/javascript" src="<%=request.getContextPath()%>/js/login.js"></script>
 </html>
