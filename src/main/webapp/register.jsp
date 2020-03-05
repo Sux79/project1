@@ -42,13 +42,10 @@
                     </div>
                 </div>
                 <div class="layui-form-item">
-                    <label class="layui-form-label">
-                        验证邮箱
-                    </label>
                     <div class="layui-input-inline">
-                        <input type="text" name="email" lay-verify="email" autocomplete="off" placeholder="请输入邮箱" class="layui-input">
+                        <input type="text" name="username" lay-verify="required" placeholder="输入邮箱" autocomplete="off" class="layui-input">
                     </div>
-
+                    <button >验证邮箱</button>
                 </div>
                 <div class="layui-form-item">
                     <div class="layui-input-inline">
@@ -56,8 +53,10 @@
                     </div>
                     <img src="/VerificationCode" alt="点击刷新验证码" id="safecode" onclick="reloadVerificationCode()">
                 </div>
-                <div id="register">
-                <button type="button"  class="layui-btn layui-btn-fluid layui-btn-normal layui-btn-radius">注册</button>
+                <div>
+                    <div>
+                        <button type="button"  id="register" onclick="registerBtn()" class="layui-btn layui-btn-fluid layui-btn-normal layui-btn-radius">注册</button>
+                    </div>
                 </div>
                 <%--<ul style="list-style-type:none">--%>
                     <%--<li>邮箱：<input type="email"></li>--%>
@@ -77,7 +76,7 @@
 </div>
 </body>
 <script type="text/javascript" src="<%=request.getContextPath()%>/jq/jquery.min.js"></script>
-<script type="text/javascript" src="<%=request.getContextPath()%>/jq/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="<%=request.getContextPath()%>/jq/jquery-2.1.4.js"></script>
 <script type="text/javascript" src="<%=request.getContextPath()%>/bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="<%=request.getContextPath()%>/layui/layui.js"></script>
 <script src="<%=request.getContextPath()%>/layui/layui.all.js"></script>
