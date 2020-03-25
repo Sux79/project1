@@ -13,8 +13,8 @@ public class LoginService {
     @Autowired
     private loginDao lgdao;
 
-    public List queryList(HashMap s) {
-        List a= lgdao.queryList(s);
+    public List queryList() throws Exception {
+        List a= lgdao.queryList();
         return a;
     }
 

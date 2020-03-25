@@ -19,15 +19,20 @@ public class loginAndRegister {
     @Resource
     private LoginService loginService;
 
-    @RequestMapping("/login")
-    public Map login(@RequestBody HashMap map, HttpServletRequest request){
+    @RequestMapping(value ="/login")
+    public Map login(@RequestBody HashMap map, HttpServletRequest request) throws Exception{
         Map result =new HashMap();
         result = map;
         HttpSession session = request.getSession();
         String verificationCode = (String) session.getAttribute("VerificationCode");
         result.put("code",verificationCode);
-        loginService.queryList((HashMap) request);
         return result;
     }
 
+    @RequestMapping(value ="/info")
+    public List userInfo () throws Exception{
+        List result =new ArrayList();
+        result = loginService.queryList();
+        return result;
+    }
 }

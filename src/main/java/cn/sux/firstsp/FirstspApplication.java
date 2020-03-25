@@ -8,7 +8,7 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 
 //@Controller
 @SpringBootApplication
-@MapperScan("com.sux.crm.dao")
+@MapperScan("cn.sux.firstsp.dao")
 
 public class FirstspApplication extends SpringBootServletInitializer {
 

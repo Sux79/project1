@@ -7,5 +7,5 @@ import java.util.List;
 
 public interface loginDao {
     @Transactional(rollbackFor = Exception.class)
-    List queryList(HashMap s);
+    List queryList();
 }
